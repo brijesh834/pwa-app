@@ -1,0 +1,25 @@
+
+<ul>
+  <li>
+    <h2><a routerLink="/posts">View Posts</a></h2>
+  </li>
+  <li>
+    <h2><a routerLink="/users">View Users</a></h2>
+  </li>
+  
+</ul>
+<table class="table-editable">
+  <thead>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Website</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td >{{user.name}}</td>
+      <td >{{user.email}}</td>
+      <td>{{user.website}}</td>
+    </tr>
+    
+  </tbody>
+</table>
